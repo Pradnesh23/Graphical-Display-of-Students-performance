@@ -1,0 +1,45 @@
+1. Database Connection:
+- It establishes a connection to an SQLite database file named "student_database.db" and
+creates a cursor object for executing SQL commands.
+
+2. Student Data Entry Section:
+- Defines an interface for entering student data (Student ID, Name, Surname, and Date of
+Birth).
+- Provides a button to trigger the insertion of student data into the "Student" table in the
+database.
+
+3. Test Data Entry Section:
+- Defines an interface for entering test data (Test ID, Student ID, Name, Physics,
+Chemistry, and Maths marks, and Date of Test).
+- Provides a button to insert this test data into the "Test" table in the database.
+
+4. Graphical Data Display Section:
+- Allows the user to input a student ID.
+- Retrieves test data for the specified student from the "Test" table in the database.
+- Plots a graphical representation using Matplotlib, displaying Physics, Chemistry, and
+Maths marks over different test IDs.
+- The plot is embedded in a new Tkinter window.
+
+5. Tkinter GUI Layout:
+- Creates a Tkinter window with a title "Student Database GUI."
+- Organizes the layout using labels, entry widgets, and buttons in a grid structure.
+- Uses separate sections for student data entry, test data entry, and displaying graphical
+data.
+
+6. Functions:
+- enter_student_data: Inserts student data into the "Student" table.
+- enter_test_data: Inserts test data into the "Test" table.
+- show_graphical_data: Retrieves test data for a specified student and displays a
+graphical plot.
+
+7. Tkinter Main Loop:
+- Initiates the Tkinter main loop (window.mainloop()) to keep the GUI running.
+
+8. Database Closure:
+- Closes the database connection when the main loop exits.
+
+9. Note:
+- There's a redundant conn.close() at the end of the script, which may cause an issue if the
+database connection is closed earlier in the code.
+This script allows users to input and manage student and test data through a user-friendly
+GUI, visualize test data graphically, and stores the information in an SQLite database.
