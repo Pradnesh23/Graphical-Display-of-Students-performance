@@ -3,6 +3,7 @@ from tkinter import messagebox
 import sqlite3
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+ #leaving my  mark
 
 conn = sqlite3.connect("student_database.db")
 cursor = conn.cursor()
